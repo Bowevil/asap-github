@@ -38,3 +38,14 @@ if (file_exists($local_settings)) {
  * See: tests/installer-features/installer.feature
  */
 $settings['install_profile'] = 'standard';
+$databases['default']['default'] = array (
+  'database' => 'asap_site',
+  'username' => 'asap_admin',
+  'password' => 'CtSCMOYCUsgxKjqC',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['hash_salt'] = 'yOwlvTUCS9qFAANcubS0_A14JTp0zL1St6PeeavVgmvZn3CNDqipll3uiYkzs2BvzwOykHLCdg';
