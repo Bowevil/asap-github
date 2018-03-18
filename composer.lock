@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d94847b114495926981557270016845b",
+    "content-hash": "7ea2750e209206147de01815eb9674bd",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1408,17 +1408,17 @@
         },
         {
             "name": "drupal/bootstrap",
-            "version": "3.5.0",
+            "version": "3.10.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/bootstrap",
-                "reference": "8.x-3.5"
+                "reference": "8.x-3.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.5.zip",
-                "reference": "8.x-3.5",
-                "shasum": "569f8a243ad6a2e04a86123a0b2a594783a09860"
+                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.10.zip",
+                "reference": "8.x-3.10",
+                "shasum": "1e7c45906fa3fe990868da53a336e702113cd66a"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -1429,8 +1429,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.5",
-                    "datestamp": "1495040301",
+                    "version": "8.x-3.10",
+                    "datestamp": "1519144980",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1439,29 +1439,36 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0"
             ],
             "authors": [
                 {
-                    "name": "markcarver",
-                    "homepage": "https://www.drupal.org/user/501638"
+                    "name": "Mark Carver (markcarver)",
+                    "homepage": "https://www.drupal.org/u/markcarver",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "neardark",
-                    "homepage": "https://www.drupal.org/user/661076"
+                    "name": "John McCormick (neardark)",
+                    "homepage": "https://www.drupal.org/u/neardark",
+                    "role": "Co-maintainer"
                 },
                 {
-                    "name": "sylus",
-                    "homepage": "https://www.drupal.org/user/339714"
+                    "name": "Fabiano Sant'Ana (wundo)",
+                    "homepage": "https://www.drupal.org/u/wundo",
+                    "role": "Co-maintainer"
                 },
                 {
                     "name": "wundo",
                     "homepage": "https://www.drupal.org/user/25523"
                 }
             ],
+            "description": "Built to use Bootstrap, a sleek, intuitive, and powerful front-end framework for faster and easier web development.",
             "homepage": "https://www.drupal.org/project/bootstrap",
             "support": {
-                "source": "http://cgit.drupalcode.org/bootstrap"
+                "source": "http://cgit.drupalcode.org/bootstrap",
+                "docs": "https://drupal-bootstrap.org",
+                "issues": "https://www.drupal.org/project/issues/bootstrap",
+                "irc": "irc://irc.freenode.org/drupal-bootstrap"
             }
         },
         {
@@ -1879,17 +1886,59 @@
             "time": "2017-05-02T14:17:00+00:00"
         },
         {
+            "name": "drupal/contentimport",
+            "version": "dev-4.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/contentimport",
+                "reference": "2fb7e433580955ee088f1757b8ab2a71a44226ec"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-4.x": "4.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-4.x-dev",
+                    "datestamp": "1518784980",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "dhayanandan_k",
+                    "homepage": "https://www.drupal.org/user/3534286"
+                }
+            ],
+            "description": "To Import content from CSV file",
+            "homepage": "https://www.drupal.org/project/contentimport",
+            "support": {
+                "source": "http://cgit.drupalcode.org/contentimport"
+            },
+            "time": "2018-02-16T12:39:14+00:00"
+        },
+        {
             "name": "drupal/core",
-            "version": "8.3.2",
+            "version": "8.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "82c432cfe728458538d4826c9c4be57dcf35443b"
+                "reference": "32f66ed9cc593f8e9ab0eaaaeff4cadbd859d5ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/82c432cfe728458538d4826c9c4be57dcf35443b",
-                "reference": "82c432cfe728458538d4826c9c4be57dcf35443b",
+                "url": "https://api.github.com/repos/drupal/core/zipball/32f66ed9cc593f8e9ab0eaaaeff4cadbd859d5ff",
+                "reference": "32f66ed9cc593f8e9ab0eaaaeff4cadbd859d5ff",
                 "shasum": ""
             },
             "require": {
@@ -2061,7 +2110,55 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2017-05-03T17:12:42+00:00"
+            "time": "2017-08-16T17:10:35+00:00"
+        },
+        {
+            "name": "drupal/courier",
+            "version": "1.0.0-alpha9",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/courier",
+                "reference": "8.x-1.0-alpha9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/courier-8.x-1.0-alpha9.zip",
+                "reference": "8.x-1.0-alpha9",
+                "shasum": "e6dc9cc3a9b39816c1182a47d9d1a19f71d0fbed"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/dynamic_entity_reference": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha9",
+                    "datestamp": "1469304239",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "dpi",
+                    "homepage": "https://www.drupal.org/user/81431"
+                }
+            ],
+            "description": "Provides storage for various types of messages.",
+            "homepage": "https://www.drupal.org/project/courier",
+            "support": {
+                "source": "http://cgit.drupalcode.org/courier"
+            }
         },
         {
             "name": "drupal/ctools",
@@ -2308,6 +2405,65 @@
             }
         },
         {
+            "name": "drupal/dynamic_entity_reference",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/dynamic_entity_reference",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/dynamic_entity_reference-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "815831e4d9d23cf6ebd989d58059e10caadef782"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1501151042",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Lee Rowlands",
+                    "homepage": "https://www.drupal.org/u/larowlan",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Jibran Ijaz",
+                    "homepage": "https://www.drupal.org/u/jibran",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "larowlan",
+                    "homepage": "https://www.drupal.org/user/395439"
+                }
+            ],
+            "description": "Provides a field that allows an entity-reference field to reference more than one entity type.",
+            "homepage": "http://drupal.org/project/dynamic_entity_reference",
+            "support": {
+                "source": "http://cgit.drupalcode.org/dynamic_entity_reference",
+                "issues": "http://drupal.org/project/dynamic_entity_reference",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
             "name": "drupal/easy_breadcrumb",
             "version": "1.6.0",
             "source": {
@@ -2486,6 +2642,61 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/entity_reference_revisions"
             }
+        },
+        {
+            "name": "drupal/facets",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/facets",
+                "reference": "1cc44f10fdedcaac3aba72a1476d612c204461b8"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "require-dev": {
+                "drupal/search_api": "~1.5"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta2+7-dev",
+                    "datestamp": "1518882482",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "See all contributors",
+                    "homepage": "https://www.drupal.org/node/2348769/committers"
+                },
+                {
+                    "name": "StryKaizer",
+                    "homepage": "https://www.drupal.org/user/462700"
+                },
+                {
+                    "name": "borisson_",
+                    "homepage": "https://www.drupal.org/user/2393360"
+                }
+            ],
+            "description": "The Facet module allows site builders to easily create and manage faceted search interfaces.",
+            "homepage": "https://www.drupal.org/project/facets",
+            "support": {
+                "source": "git://git.drupal.org/project/facets.git",
+                "issues": "https://www.drupal.org/project/issues/facets",
+                "irc": "irc://irc.freenode.org/drupal-search-api"
+            },
+            "time": "2018-03-10T08:14:11+00:00"
         },
         {
             "name": "drupal/fancy_login",
@@ -2728,6 +2939,106 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/profile"
             }
+        },
+        {
+            "name": "drupal/rng",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/rng",
+                "reference": "b9537f202681330f217ac5fb25a7cfbcdd0657e9"
+            },
+            "require": {
+                "drupal/core": "^8.1",
+                "drupal/courier": "^1.0@alpha",
+                "drupal/dynamic_entity_reference": "^1.0",
+                "drupal/unlimited_number": "^1.0@beta"
+            },
+            "require-dev": {
+                "drupal/veoa": "*",
+                "drupal/views_advanced_routing": "*"
+            },
+            "suggest": {
+                "drupal/rng_conflict": "Prevent registrations when a registrant is registered for a similar event.",
+                "drupal/rng_contact": "Provides a simple contact entity type.",
+                "drupal/rng_date_scheduler": "Control whether a user can register based on current time in relation to date fields attached to an event entity.",
+                "drupal/rng_quick": "Provides blocks for event registration.",
+                "drupal/token": " Improves token UI on message template forms."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.4+3-dev",
+                    "datestamp": "1488095582",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Phin",
+                    "homepage": "http://danielph.in",
+                    "email": "pro@danielph.in",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Provides ability to create and manage events and registrations.",
+            "homepage": "http://drupal.org/project/rng",
+            "support": {
+                "source": "https://github.com/dpi/rng",
+                "issues": "https://github.com/dpi/rng/issues"
+            }
+        },
+        {
+            "name": "drupal/search_autocomplete",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/search_autocomplete",
+                "reference": "c8a8843b050102a33f641a891ba6b53d5a13a9df"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1+2-dev",
+                    "datestamp": "1488191583",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Dom.",
+                    "homepage": "https://www.drupal.org/user/801982"
+                }
+            ],
+            "description": "Provides autocompletion feature for fields in your Drupal site. This module ships with pre-existing autocompletion configurations.",
+            "homepage": "https://www.drupal.org/project/search_autocomplete",
+            "support": {
+                "source": "http://cgit.drupalcode.org/search_autocomplete"
+            },
+            "time": "2017-02-27T10:29:17+00:00"
         },
         {
             "name": "drupal/search_kint",
@@ -2982,6 +3293,157 @@
             }
         },
         {
+            "name": "drupal/unlimited_number",
+            "version": "1.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/unlimited_number",
+                "reference": "8.x-1.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/unlimited_number-8.x-1.0-beta2.zip",
+                "reference": "8.x-1.0-beta2",
+                "shasum": "2976624472cfaa55591d3d4b6bbed8e0d1b9dcf9"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1483409343",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Phin",
+                    "homepage": "http://danielph.in",
+                    "email": "pro@danielph.in",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Provides a render element and a widget for number fields.",
+            "homepage": "http://drupal.org/project/unlimited_number",
+            "support": {
+                "source": "https://github.com/dpi/unlimited_number",
+                "issues": "https://github.com/dpi/unlimited_number/issues"
+            }
+        },
+        {
+            "name": "drupal/veoa",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/veoa",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/veoa-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "f4d38c3c99cedec06dfcb83731f466c682d46443"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1490679485",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\veoa\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Drupal\\Tests\\veoa\\": "tests/src"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Phin",
+                    "homepage": "http://danielph.in",
+                    "email": "pro@danielph.in",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Provides a Views access control plugin checking if the user can perform an operation on an entity in context.",
+            "homepage": "http://drupal.org/project/veoa",
+            "support": {
+                "source": "https://github.com/dpi/veoa",
+                "issues": "https://github.com/dpi/veoa/issues"
+            }
+        },
+        {
+            "name": "drupal/views_advanced_routing",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/views_advanced_routing",
+                "reference": "e372d1e0049f56d1d28fcc4c459549038186bc40"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc1+2-dev",
+                    "datestamp": "1463926445",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "dpi",
+                    "homepage": "https://www.drupal.org/user/81431"
+                }
+            ],
+            "description": "Provides advanced route customisation for Views.",
+            "homepage": "https://www.drupal.org/project/views_advanced_routing",
+            "support": {
+                "source": "http://cgit.drupalcode.org/views_advanced_routing"
+            }
+        },
+        {
             "name": "drupal/views_slideshow",
             "version": "4.5.0",
             "source": {
@@ -3044,20 +3506,20 @@
         },
         {
             "name": "drupal/webform",
-            "version": "5.0.0-beta16",
+            "version": "dev-5.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/webform",
-                "reference": "8.x-5.0-beta16"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-beta16.zip",
-                "reference": "8.x-5.0-beta16",
-                "shasum": "b19798b8eba223b64a2c8ff8eb61e87948a434f9"
+                "reference": "bfac69619cbab6ad813f60a873d442a22669da0c"
             },
             "require": {
                 "drupal/core": "*"
+            },
+            "require-dev": {
+                "drupal/devel": "*",
+                "drupal/token": "*",
+                "drupal/webform_node": "*",
+                "drupal/webform_scheduled_email": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -3065,11 +3527,16 @@
                     "dev-5.x": "5.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.0-beta16",
-                    "datestamp": "1502286865",
+                    "version": "8.x-5.0-rc3+88-dev",
+                    "datestamp": "1520645886",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
                     }
                 }
             },
@@ -3084,8 +3551,13 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "Liam Morland",
-                    "homepage": "https://www.drupal.org/user/493050"
+                    "name": "Alexander Trotsenko (bucefal91)",
+                    "homepage": "https://www.drupal.org/u/bucefal91",
+                    "role": "Co-maintainer"
+                },
+                {
+                    "name": "bucefal91",
+                    "homepage": "https://www.drupal.org/user/504128"
                 },
                 {
                     "name": "fenstrat",
@@ -3120,8 +3592,11 @@
             "homepage": "https://drupal.org/project/webform",
             "support": {
                 "source": "http://cgit.drupalcode.org/webform",
-                "issues": "https://drupal.org/project/issues/webform"
-            }
+                "issues": "https://www.drupal.org/project/issues/webform?version=8.x",
+                "docs": "https://www.drupal.org/docs/8/modules/webform",
+                "forum": "https://drupal.stackexchange.com/questions/tagged/webform"
+            },
+            "time": "2018-03-10T19:59:27+00:00"
         },
         {
             "name": "drush/drush",
@@ -8312,8 +8787,13 @@
         "drupal/better_exposed_filters": 15,
         "drupal/block_class": 15,
         "drupal/commerce": 20,
+        "drupal/contentimport": 20,
+        "drupal/facets": 20,
+        "drupal/rng": 20,
+        "drupal/search_autocomplete": 20,
         "drupal/simple_block": 10,
-        "drupal/webform": 10
+        "drupal/views_advanced_routing": 20,
+        "drupal/webform": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
